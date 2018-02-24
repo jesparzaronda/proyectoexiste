@@ -1,0 +1,23 @@
+#tm_builder_outer_content .tm_pb_toggle.tm_pb_module {
+    max-width: 770px;
+    .page & {
+        margin: 2px auto;
+    }
+    border: none;
+    border-radius: $border__radius;
+    padding: 10px 33px;
+
+    .tm_pb_toggle_title {
+        margin-bottom: 0;
+        padding: 0 20px 0 0;
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    .tm_pb_toggle_content {
+        padding-top: 15px;
+        line-height: 1.7;
+    }
+}

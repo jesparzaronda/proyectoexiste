@@ -1,0 +1,40 @@
+.widget {
+  &-title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 1em 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+    }
+  }
+
+  & + .widget {
+    margin-top: 1em;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 2.5em;
+    }
+    .footer-area & {
+      margin-top: 0;
+    }
+  }
+
+  &:last-child {
+    .widget-area & {
+      margin-bottom: 1em;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 2em;
+      }
+    }
+  }
+  select {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+  }
+}
+.footer-area-wrap .widget-about__logo-img {
+  margin-top: 11px;
+}

@@ -1,0 +1,204 @@
+/* #Entry Meta */
+
+.sticky__label {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_2;
+}
+
+.entry-title a:hover{
+	color: $regular_link_hover_color;
+}
+
+.post-list__item-content::before {
+	background:$regular_accent_color_1;
+}
+
+.post__cats a{
+	color: $regular_accent_color_3;
+	border-color: $regular_accent_color_1;
+}
+
+.post__cats a:hover {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.entry-meta .material-icons,
+.post__tags .material-icons,
+.entry-meta .fa,
+.post__tags .fa {
+	color: @alpha( $regular_accent_color_1, 30 );
+}
+.posted-by,
+.posted-by__author,
+.post-featured-content {
+	color: $regular_accent_color_3;
+}
+.posted-by__author:hover,
+.post__comments-link:hover{
+	color: $regular_link_color;
+}
+
+.post__tags a,
+.post__tags {
+	color: $regular_accent_color_2;
+}
+
+.post__tags a:hover{
+	color: $regular_link_color;
+}
+
+.invert .post__cats a:hover {
+	color: $regular_link_color;
+	background-color: $invert_accent_color_1;
+}
+
+.post-thumbnail__format-link{
+	background:$regular_accent_color_2;
+}
+
+/* #Post Format */
+.format-quote .post-quote {
+	color: $regular_accent_color_1;
+}
+
+.post-quote::before {
+	background: @alpha( $regular_link_color, 60 );
+}
+
+.posts-list blockquote::before {
+	color: @alpha( $invert_link_color, 5 );
+}
+.post-format-link{
+	color: $invert_link_color;
+}
+
+.post-format-link:hover{
+	color: $regular_link_hover_color;
+}
+
+.post-author__content{
+	color: $regular_text_color;
+}
+
+/* #Author Bio */
+
+.post-author__title a:hover {
+	color:  $regular_link_color;
+}
+
+.post-author__title a {
+	color: $regular_accent_color_2;
+}
+
+.post-author-bio {
+	background: $regular_accent_color_1;
+}
+
+/* #Comment Reply Link */
+#cancel-comment-reply-link {
+	color: $regular_accent_color_1;
+}
+#cancel-comment-reply-link:hover {
+	color: $regular_accent_color_2;
+}
+
+.comment-metadata, .comment-date__time  {
+	color: $regular_accent_color_3;
+}
+
+.comment-body .fn {
+	color: $regular_accent_color_2;
+}
+
+.comment-content{
+	color: $regular_text_color;
+}
+
+.comment-date:hover .comment-date__time{
+	color: $regular_link_color;
+}
+
+.comment-respond::before {
+	background:  $regular_accent_color_1;
+}
+
+.comment-reply-title{
+	font-family:$h2_font_family;
+}
+.comment-reply-link:hover{
+	color: $regular_link_color;
+}
+.comment-form__field {
+	color: $regular_accent_color_4;
+	background-color: $invert_accent_color_1;
+}
+
+.comment-form__field::-webkit-input-placeholder { color: $regular_accent_color_4; }
+.comment-form__field::-moz-placeholder { color: $regular_accent_color_4; }
+.comment-form__field:-moz-placeholder { color: $regular_accent_color_4; }
+.comment-form__field:-ms-input-placeholder { color: $regular_accent_color_4; }
+
+.posts-list.posts-list--grid-2-cols .post .entry-footer::before,
+.posts-list.posts-list--grid-3-cols .post .entry-footer::before,
+.posts-list.posts-list--masonry-2-cols .post .entry-footer::before,
+.posts-list.posts-list--masonry-3-cols .post .entry-footer::before {
+	background:$regular_accent_color_1;
+}
+
+.comment-form .comment-notes,
+#cancel-comment-reply-link {
+	color: $regular_link_color;
+}
+.comment-form .form-submit .submit {
+	color: $regular_link_color;
+	border-color:$regular_link_color;
+}
+
+.comment-form .form-submit .submit:hover {
+	color: $invert_link_color;
+	border-color:$regular_accent_color_2;
+	background: $regular_accent_color_2;
+}
+
+
+.entry-meta * {
+	color: $regular_link_hover_color;
+}
+
+.post__date a time:hover{
+	color: $regular_accent_color_2;
+}
+
+.single.single-post .entry-footer {
+	border-color: $regular_accent_color_1;
+}
+.post-gallery .swiper-button-next, .post-gallery .swiper-button-prev {
+	color: $regular_link_hover_color;
+}
+
+.post-gallery .swiper-button-next:hover,
+.post-gallery .swiper-button-prev:hover {
+	color: $regular_accent_color_2 !important;
+	background-color: $invart_link_color;
+}
+
+.posts-list .post-thumbnail__link {
+	background: -webkit-linear-gradient(45deg,$regular_accent_color_2 0%, $regular_accent_color_1 100%);
+	background: linear-gradient(45deg, $regular_accent_color_2 0%,$regular_accent_color_1 100%);
+}
+
+.post-password-form input[type="submit"]{
+	color: $regular_accent_color_1;
+	border-color: $regular_link_color;
+}
+
+.post-password-form input[type="submit"]:hover{
+	background: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+	color: $invert_link_color;
+}
+
+.post-password-form label input{
+	color: $regular_accent_color_1;
+}

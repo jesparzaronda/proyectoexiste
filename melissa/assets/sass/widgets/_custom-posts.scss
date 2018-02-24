@@ -1,0 +1,33 @@
+.custom-posts {
+  .entry-content, .entry-footer {
+    padding: 0;
+  }
+  h6 {
+    margin-bottom: 11px;
+  }
+
+  .post__cats, .post__tags, .entry-content p {
+    margin: 10px 0;
+  }
+
+  &__item {
+
+    .sidebar-primary & {
+      .entry-footer {
+        margin: 0;
+      }
+    }
+    + .custom-posts__item {
+      margin-top: 0.6em;
+    }
+    .full-width-header-area &,
+    .after-content-full-width-area & {
+      margin: 0 0 1.5em;
+    }
+  }
+  .full-width-header-area &,
+  .after-content-full-width-area & {
+    padding-right: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
+  }
+}

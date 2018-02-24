@@ -1,0 +1,67 @@
+
+.entry-content {
+    ul, ol {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        li {
+            padding-left: 47px;
+            position: relative;
+        }
+        li + li {
+            margin-top: 11px;
+        }
+    }
+
+    ul {
+        > li {
+            &::before {
+                content: '\f105';
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-family: FontAwesome;
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    ol {
+        counter-reset: li;
+        > li {
+            &::before {
+                content: counter(li, decimal-leading-zero) ".";
+                counter-increment: li;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #c4c4c4;
+            }
+        }
+
+    }
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 1.5em 1.5em;
+}
+
+/* Inline list */
+.inline-list {
+    @include reset-list;
+    li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

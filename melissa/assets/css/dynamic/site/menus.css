@@ -1,0 +1,96 @@
+/* #Main Menu */
+.main-navigation .menu > li > a {
+	color: $regular_link_color;
+	font-family:@font_family( $h1_font_family );
+}
+
+.menu > li > a > .menu-item__desc {
+	font-family:@font_family( $body_font_family );
+	color: $regular_link_color;
+}
+
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover > a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a {
+	color: $regular_link_hover_color;
+}
+
+.main-navigation ul ul a {
+	color: $regular_link_hover_color;
+}
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover > a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-item > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_4;
+}
+.menu-item__desc {
+	color: $regular_text_color;
+}
+
+.header-container #site-navigation.main-navigation .sub-menu{
+	background: $regular_link_color;
+}
+
+.header-container #site-navigation.main-navigation .menu > li.menu-item .sub-menu-toggle{
+	background: $regular_accent_color_2;
+}
+
+.header-container #site-navigation.main-navigation .menu > li.menu-item .sub-menu-toggle:hover{
+	background: $regular_link_color;
+}
+
+.header-container #site-navigation.main-navigation .menu > li.menu-item .sub-menu-toggle::before {
+	color: $regular_accent_color_1;
+}
+
+	/* #Footer Menu */
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a {
+	color: $regular_text_color;
+}
+
+.main-navigation .sub-menu li.menu-item-has-children::after {
+	color: $regular_accent_color_2;
+}
+
+.menu-toggle {
+	color: $regular_link_color;
+}
+
+.menu-toggle:hover {
+	color:$regular_accent_color_2;
+}
+
+.menu-toggle span{
+	font-family:$h2_font_family;
+}
+@media (max-width: 767px){
+	.header-container #site-navigation.main-navigation .menu,
+	.header-container #site-navigation.main-navigation .sub-menu{
+		background: $regular_accent_color_1;
+	}
+	.main-navigation ul ul a {
+		color: $regular_link_color;
+	}
+	.main-navigation .sub-menu > li > a:hover,
+	.main-navigation .sub-menu > li.menu-hover > a,
+	.main-navigation .sub-menu > li.current_page_item > a,
+	.main-navigation .sub-menu > li.current_page_ancestor > a,
+	.main-navigation .sub-menu > li.current-menu-item > a,
+	.main-navigation .sub-menu > li.current-menu-ancestor > a {
+		color: $regular_link_hover_color;
+	}	
+}
+
+@media (min-width: 768px){
+	.header-container .main-navigation.isStuck{
+		background: $regular_accent_color_1;
+	}
+	
+}

@@ -1,0 +1,38 @@
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: -999em;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    z-index: 999;
+    text-align: center;
+    border-radius: $border__radius;
+    border: 1px solid;
+    span {
+        display: none;
+    }
+    &:before {
+        font-family: FontAwesome;
+        font-size: 24px;
+        content: "\f106";
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        line-height: 1;
+        @include translate(-50%, -50%);
+        @include transition(.4s ease all);
+    }
+
+    &:focus {
+        outline: none;
+    }
+    @include media-breakpoint-up(sm) {
+        left: 188px;
+    }
+    @include media-breakpoint-up(md) {
+        bottom: 96px;
+    }
+}

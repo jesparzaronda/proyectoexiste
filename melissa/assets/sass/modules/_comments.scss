@@ -1,0 +1,129 @@
+.comments {
+
+
+  &-area {
+    max-width: 570px;
+    margin: 0 auto;
+    position: relative;
+    .position-one-right-sidebar.single.single-post &,
+    .position-one-left-sidebar.single.single-post &{
+      overflow: hidden;
+    }
+  }
+  &-title {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+}
+
+.comment {
+
+  &-metadata {
+    font-style: italic;
+    @include font-size(1);
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0 0 78px;
+    list-style: none;
+
+    .comment-respond {
+      padding: 50px 0;
+      margin: 30px 0;
+    }
+    .children {
+      margin-left: 0;
+      padding-left: 10px;
+      list-style: none;
+      .comment-body {
+        padding-bottom: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 70px;
+      }
+    }
+    > .comment,
+    > .ping {
+      margin-bottom: 10px;
+    }
+  }
+  &-content {
+    margin-top: 20px;
+    a {
+      word-wrap: break-word;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &-body {
+    padding-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 30px;
+      padding-bottom: 5px;
+    }
+    &__holder {
+      position: relative;
+    }
+    .avatar {
+      float: left;
+      width: auto;
+      margin: 0 15px 10px 0;
+      border-radius: 50%;
+
+      @include media-breakpoint-up(lg) {
+        margin: 5px 45px 15px 0;
+      }
+    }
+    .fn {
+      margin-right: 10px;
+      font-style: italic;
+      text-transform: capitalize;
+      font-weight: 400;
+      @include media-breakpoint-up(lg) {
+        margin-right: 25px;
+      }
+    }
+    .reply {
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      right: 0;
+      transition: all 0.25s ease;
+      opacity: .2;
+      &:hover {
+        opacity: 1;
+      }
+      @include media-breakpoint-up(sm){
+        top: 23px;
+      }
+
+    }
+  }
+  &-reply-link {
+    font-size: 17px;
+    .material-icons {
+      font-size: inherit;
+    }
+  }
+  &-date {
+    display: block;
+    float: none;
+
+    @include media-breakpoint-up(sm){
+      float: right;
+    }
+    &__time {
+      display: inline-block;
+      vertical-align: top;
+      @include transition(.3s ease all);
+    }
+  }
+}
+
+.bypostauthor {
+  display: block;
+}

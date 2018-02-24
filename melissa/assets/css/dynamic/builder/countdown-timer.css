@@ -1,0 +1,12 @@
+#tm_builder_outer_content .tm_pb_countdown_timer .section .value {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module .values .value,
+#tm_builder_outer_content .tm_pb_section .tm_pb_number_counter.tm_pb_module .percent-value {
+	font-family:$h1_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module{
+	background:  $regular_accent_color_1;
+}

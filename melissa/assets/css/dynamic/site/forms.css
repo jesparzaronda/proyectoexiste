@@ -1,0 +1,114 @@
+/* #Search Form */
+.search-form__field {
+	color: $regular_text_color;
+}
+.search-form__field::-webkit-input-placeholder { color: $regular_accent_color_3; }
+.search-form__field::-moz-placeholder { color: $regular_accent_color_3; }
+.search-form__field:-moz-placeholder { color: $regular_accent_color_3; }
+.search-form__field:-ms-input-placeholder { color: $regular_accent_color_3; }
+
+.top-panel .search-form__submit {
+	color: $regular_accent_color_2;
+}
+.top-panel .search-form__submit:hover {
+	color: ;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input.tm_contact_error{
+	box-shadow: 0 0 2px $regular_accent_color_2;
+}
+
+.tm_pb_contact_form{
+	background: transparent;
+}
+
+#tm_builder_outer_content .invert.tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input,
+#tm_builder_outer_content .invert.tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea{
+	color: $regular_accent_color_4;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea{
+	color: $regular_link_color;
+}
+
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module.custom-form .tm_pb_contact_field input {
+	background: $invert_accent_color_1;
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module.custom-form .tm_pb_contact_field input::-webkit-input-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module.custom-form .tm_pb_contact_field input::-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module.custom-form .tm_pb_contact_field input:-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module.custom-form .tm_pb_contact_field input:-ms-input-placeholder{
+	color: $regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input::-webkit-input-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input::-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input::-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field input::-ms-input-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea::-webkit-input-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea::-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea::-moz-placeholder,
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_field textarea::-ms-input-placeholder {
+	color: $regular_accent_color_4;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_submit {
+	color: $regular_link_color;
+	border-color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm_pb_contact_submit:hover {
+	background: $regular_link_color;
+	border-color: $regular_link_color;
+	color: $regular_link_hover_color;
+}
+
+#tm_builder_outer_content .invert.tm_pb_contact_form.tm_pb_module .tm_pb_contact_submit {
+	color: $regular_accent_color_4;
+	border-color: $regular_accent_color_4;
+}
+
+#tm_builder_outer_content .invert.tm_pb_contact_form.tm_pb_module .tm_pb_contact_submit:hover {
+	background: $regular_accent_color_4;
+	border-color: $regular_accent_color_4;
+	color: $invert_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form.tm_pb_module .tm-pb-contact-message ul li + li::before {
+	color: $regular_link_color;
+}
+
+.search-form__submit::before {
+	color: $regular_accent_color_2;
+}
+
+.search-form__submit:hover::before {
+	color: $regular_accent_color_1;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $regular_link_color; }
+::-moz-placeholder          { color: $regular_link_color; }
+:-moz-placeholder           { color: $regular_link_color; }
+:-ms-input-placeholder      { color: $regular_link_color; }
+
+.invert input::-webkit-input-placeholder,
+.invert textarea::-webkit-input-placeholder { 
+	color: $regular_link_hover_color; 
+}
+.invert input::-moz-placeholder,
+.invert textarea::-moz-placeholder { 
+	color: $regular_link_hover_color; 
+}
+.invert input:-moz-placeholder,
+.invert textarea:-moz-placeholder{ 
+	color: $regular_link_hover_color; 
+}
+.invert input::-ms-input-placeholder,
+.invert textarea::-ms-input-placeholder{ 
+	color: $regular_link_hover_color; 
+}

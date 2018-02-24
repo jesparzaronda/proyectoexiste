@@ -1,0 +1,30 @@
+#tm_builder_outer_content .tm_pb_text.tm_pb_module h3 > a {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_text.tm_pb_module h3 > a:hover {
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_button_module_wrapper.tm_pb_module .tm_pb_button:hover a {
+	color: $invert_link_color ;
+}
+
+#tm_builder_outer_content .tm_pb_social_media_follow li.tm_pb_social_icon a.icon{
+	color: $regular_link_color !important;
+}
+
+#tm_builder_outer_content .tm_pb_social_media_follow.tm_pb_module .tm_pb_social_icon .icon:hover {
+	color: $regular_link_hover_color !important;
+}
+
+#tm_builder_outer_content .tm_pb_button_module_wrapper.tm_pb_module .tm_pb_button:hover {
+	background: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+	color: $invert_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_text p > span > a:hover{
+	color: $regular_link_color !important;
+}
+

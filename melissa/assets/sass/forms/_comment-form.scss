@@ -1,0 +1,74 @@
+.comment {
+    &-respond {
+        text-align: center;
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 86px;
+        padding-bottom: 100px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10000px;
+            bottom: 0;
+            left: -10000px;
+            z-index: -1;
+        }
+    }
+    &-notes {
+        @include font-size(1.375);
+    }
+    &-reply-title {
+        font-size: 38px;
+        line-height: 1.3;
+    }
+    &-form {
+        &-comment,
+        &-author,
+        &-email,
+        &-url {
+            margin: 2px 0 0 0;
+            input {
+                border: none;
+            }
+        }
+        .form-submit {
+            margin: 1.4em 0 0 0;
+            .submit {
+                @extend .btn;
+                @include transition(.3s ease all);
+                @include font-size(1.25);
+                padding: 15px 38px;
+                background: transparent;
+            }
+        }
+        &__field {
+            width: 100%;
+            vertical-align: top;
+            @include font-size(0.875);
+            font-style: italic;
+            border-radius: $border__radius;
+            .comment-list & {
+                background-color: #fff;
+            }
+        }
+
+        textarea {
+            height: 95px;
+            border: none;
+        }
+
+        .logged-in-as,
+        .comment-notes {
+            margin: 1em 0;
+        }
+        .comment-list & {
+            padding-bottom: 2em;
+        }
+    }
+}
+
+#cancel-comment-reply-link {
+    @include font-size(0.75);
+}

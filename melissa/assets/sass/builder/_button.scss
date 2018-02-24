@@ -1,0 +1,16 @@
+#tm_builder_outer_content {
+    .tm_pb_button_module_wrapper.tm_pb_module {
+
+        .tm_pb_button {
+            padding: 0.6em 3.2em;
+
+            &:hover {
+                padding: 0.6em 3.2em;
+            }
+            &::after {
+                display: none;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,139 @@
+#tm_builder_outer_content .tm_pb_widget_area .widget-carousel img {
+  width: 100%;
+}
+
+.swiper {
+  &-carousel-container {
+    position: relative;
+  }
+  &-slide {
+    background-color: #fff;
+    &:hover {
+      background-color: #fff;
+
+      @include border-radius;
+    }
+    .widget-carousel & {
+      display: flex;
+      height: auto;
+    }
+    .inner {
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+
+      @include border-radius;
+      justify-content: space-between;
+      align-self: stretch;
+    }
+    .entry {
+      &-content {
+        margin: 0;
+        padding: 0 2em;
+        text-align: center;
+        h6 {
+          margin: 0 0 10px;
+        }
+      }
+      &-footer {
+        margin: 0 0 5.3em 0;
+        padding: 0 1em;
+        text-align: center;
+        display: block;
+      }
+      &-meta {
+        display: inline-block;
+        margin-right: 0;
+      }
+    }
+    .post-thumbnail__link {
+      display: block;
+      overflow: hidden;
+      margin-bottom: 1.8em;
+      line-height: 0;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        @include transition(.4s ease all);
+        z-index:1;
+      }
+      img {
+        width: 100%;
+        @include transition(.8s ease all);
+      }
+
+      &:hover {
+        &::before {
+          opacity: .5;
+        }
+        img {
+          transform: scale(1.2) rotate(5deg);
+        }
+      }
+
+    }
+    .post-thumbnail__img {
+      display: block;
+      width: 100%;
+      img {
+        width: 100% !important;
+      }
+
+      @include scale(1);
+      @include transition(all 1s ease);
+    }
+    .post__cats {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+  &-pagination {
+    position: static;
+  }
+  &-button-next,
+  &-button-prev {
+    top: 50%;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 0;
+    background-image: none;
+    .fa,
+    .material-icons {
+      margin: 13px;
+    }
+  }
+  &-button-next {
+    right: 0;
+
+    @include border-left-radius($border__radius);
+  }
+  &-button-prev {
+    left: 0;
+
+    @include border-right-radius($border__radius);
+  }
+}
+
+.sidebar-primary,
+.sidebar-secondary,
+.footer-area .widget-carousel:not(.footer-area--centered) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 20%;
+    width: 30px;
+    height: 30px;
+    .material-icons,
+    .fa {
+      margin: 3px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+#tm_builder_outer_content .tm_pb_map_container.tm_pb_module {
+    .tm_pb_map {
+        height: 200px;
+        @include media-breakpoint-up(sm) {
+            height: 425px;
+        }
+    }
+}

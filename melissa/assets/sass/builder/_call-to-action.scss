@@ -1,0 +1,49 @@
+#tm_builder_outer_content .tm_pb_column_1_2 .tm_pb_cta.tm_pb_module {
+    h2 {
+        margin-bottom: 32px;
+        line-height: 1.4em;
+    }
+    .tm_pb_promo_button {
+        margin-top: 14px;
+    }
+}
+
+#tm_builder_outer_content .tm_pb_cta.tm_pb_module {
+
+    &.invert {
+        .tm_pb_promo_button {
+            font-style: italic;
+            @include font-size(1.25);
+            border: 2px solid #fff;
+            padding: 0.4em 2em;
+            margin-top: 18px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 22px;
+        @include font-size(2.75);
+    }
+
+    p {
+        margin: 0 0 1.3em;
+        @include font-size(1.375);
+    }
+
+    .tm_pb_promo_button {
+        font-style: normal;
+        border: none;
+        color: #f5f1e4;
+        font-size: 1.375rem;
+        padding: 0.5em 2em;
+        &::after {
+            display: none;
+        }
+    }
+
+    .tm_pb_promo_description {
+        padding-bottom: 0;
+    }
+
+}
+

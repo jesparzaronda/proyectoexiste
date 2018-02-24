@@ -1,0 +1,39 @@
+.breadcrumbs {
+    position: relative;
+    margin: 1.5em 0;
+    text-align: center;
+    &__title {
+
+        .page-title {
+            margin: 0;
+        }
+    }
+    &__items {
+    }
+    &__browse {
+        margin-right: .5em;
+    }
+    &__wrap {
+        margin: 0;
+        display: inline-block;
+        @include media-breakpoint-up(lg) {
+            margin: .25em 0;
+        }
+    }
+    &__item {
+        display: inline-block;
+        &-sep {
+            margin: 0 0.5em;
+            font-family: FontAwesome;
+            font-style: normal;
+
+            @include media-breakpoint-up(sm) {
+                margin: 0 2em;
+            }
+
+        }
+        &-link {
+            text-decoration: none;
+        }
+    }
+}

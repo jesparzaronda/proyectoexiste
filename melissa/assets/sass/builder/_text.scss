@@ -1,0 +1,58 @@
+#tm_builder_outer_content .tm_pb_text.tm_pb_module {
+
+    h1 + .offset {
+        margin-top: -5px;
+        margin-bottom: 45px;
+    }
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    h5 + p {
+        margin-top: 22px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    p > span > em {
+        @include font-size(1);
+    }
+
+    h2 + p {
+        margin-top: 42px;
+        margin-bottom: 25px;
+    }
+
+    ul li, ol li {
+        padding-left: 50px;
+    }
+
+    h2 + h4 {
+        margin-top: 28px;
+        margin-bottom: -2px;
+    }
+
+    h4 + p {
+        margin: 0 0 1.6em;
+    }
+
+    p + h4 {
+        margin-bottom: -3px;
+    }
+
+    h1 + p {
+        margin-bottom: 0;
+    }
+
+    h1 + h5 {
+        margin-top: 41px;
+    }
+
+    h1 + p + p {
+        margin: 0 0 2em;
+    }
+
+}

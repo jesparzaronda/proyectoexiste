@@ -1,0 +1,71 @@
+#tm_builder_outer_content .tm_pb_tabs.tm_pb_module {
+    max-width: 770px;
+    margin: 0 auto;
+
+    .tm_pb_tab {
+        padding-bottom: 20px;
+    }
+
+    .tm_pb_tabs_controls {
+        border: none;
+        margin-bottom: 2px;
+        li {
+            padding: 15px 0;
+            text-align: center;
+            width: 100%;
+            margin: 2px 0;
+            border-radius: $border__radius;
+            @include media-breakpoint-up(sm) {
+                width: 32.7%;
+                margin: 2px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 32.95%;
+            }
+            a {
+                @include font-size(1);
+                @include media-breakpoint-up(md) {
+                    @include font-size(1.25);
+                }
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.tm_pb_tab_active {
+                bottom: 0;
+                border: none;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 10px;
+                    display: none;
+                    @include media-breakpoint-up(sm) {
+                        display: block;
+                    }
+                }
+            }
+            &::before {
+                display: none;
+            }
+            a {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .tm_pb_all_tabs {
+        padding: 26px 30px 15px 33px;
+        p {
+            line-height: 1.7em;
+            margin-bottom: 0;
+        }
+    }
+}

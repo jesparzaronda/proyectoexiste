@@ -1,0 +1,57 @@
+#tm_builder_outer_content .tm_pb_section .tm_pb_counters.tm_pb_module {
+    margin-right: 0;
+    @include media-breakpoint-up(sm) {
+        margin-right: 40px;
+    }
+
+    .tm_pb_counter_title {
+        @include font-size(1.125);
+        margin-bottom: 20px;
+    }
+
+    .tm_pb_counter_container {
+        margin-bottom: 32px;
+        position: relative;
+        min-height: 10px;
+        overflow: visible;
+        border-radius: 6px;
+
+        .tm_pb_counter_amount {
+            border-radius: 6px;
+            min-height: 10px;
+            .tm_pb_counter_amount_number {
+                position: absolute;
+                right: 0;
+                top: -25px;
+                font-weight: 400;
+                @include font-size(1);
+                font-style: italic;
+                @include media-breakpoint-up(sm) {
+                    right: -60px;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}
+
+#tm_builder_outer_content .tm_pb_circle_counter.tm_pb_module {
+    .percent p {
+        margin-bottom: 10px;
+        @include font-size(3);
+    }
+    h3 {
+        @include font-size(1.125);
+        font-style: italic;
+    }
+}
+
+#tm_builder_outer_content .tm_pb_number_counter.tm_pb_module {
+    .percent-value {
+        @include font-size(3);
+    }
+    h3 {
+        @include font-size(1.125);
+        font-style: italic;
+    }
+}

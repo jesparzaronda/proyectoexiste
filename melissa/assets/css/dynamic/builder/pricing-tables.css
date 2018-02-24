@@ -1,0 +1,22 @@
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module .tm_pb_pricing_table_button:hover {
+	background: $regular_accent_color_2;
+	color: $invert_link_color;
+	border-color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module .tm_pb_pricing_title{
+	color: $regular_h2_color;
+}
+
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module .tm_pb_best_value{
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module .tm_pb_tm_price {
+	color: $regular_link_color;
+	font-family:$h1_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_pricing .tm_pb_featured_table{
+	background: $regular_accent_color_1;
+}

@@ -1,0 +1,11 @@
+#tm_builder_outer_content .tm_pb_blurb h4{
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_blurb h4 a:hover{
+	color: $regular_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_blurb.tm_pb_module .tm_pb_blurb_content address {
+	color: $regular_link_color;
+}

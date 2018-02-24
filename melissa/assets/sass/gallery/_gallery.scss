@@ -1,0 +1,108 @@
+.tm-pg_frontend {
+    .tm-pg_front_gallery {
+        padding: 54px 0;
+        .load-more-button {
+            text-align: center;
+            margin-top: 30px;
+            .btn {
+                @include font-size(1.25);
+                padding: 15px 30px;
+                background: transparent;
+                border: 2px solid;
+                border-radius: 2px;
+                font-style: italic;
+            }
+        }
+        &-navigation {
+            margin: 30px 0;
+            .tm_pg_nav-links .tm_pg_page-numbers {
+                @include font-size(1.25);
+                font-style: italic;
+                &.next {
+                    margin-left: 50px;
+                }
+                &.prev {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+    .tm-pg_front_gallery-grid,
+    .tm-pg_front_gallery-masonry,
+    .tm-pg_front_gallery-justify {
+        .tm_pg_gallery-item {
+            &_link:hover::before {
+                opacity: .5;
+            }
+
+            &_label {
+                font-style: italic;
+                @include font-size(1);
+                padding: 6px 10px 4px;
+                line-height: 1;
+            }
+
+            &_title {
+                margin-bottom: 0;
+                font-weight: 400;
+            }
+
+            &_counter {
+                margin-top: 0;
+                @include font-size(1);
+                font-style: italic;
+                text-transform: lowercase;
+            }
+
+            &_icon {
+                margin-bottom: 10px;
+            }
+
+            &__show-more {
+                text-transform: none;
+            }
+        }
+    }
+}
+
+.single-tm_pg_album, .single-tm_pg_set {
+    &.position-fullwidth {
+        .entry-content {
+            padding: 0;
+        }
+    }
+    .entry-title{
+        @include font-size(3);
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    .entry-content {
+        padding: 0;
+    }
+    .tm-pg_front_gallery {
+        padding-top: 0;
+        margin-top: -15px;
+        .gallery-item {
+            &_link {
+                display: block;
+            }
+        }
+    }
+}
+
+.lg-outer .lg-actions .lg-icon {
+    margin-top: 0;
+    @include translate(0, -50%);
+}
+
+.single-tm_pg_album {
+    .tm-pg_frontend .tm_pg_gallery-item_meta .tm_pg_gallery-item_title {
+        @include font-size(0);
+        line-height: 0;
+        &::before {
+            content: '\f06e';
+            font-family: FontAwesome;
+            @include font-size(2);
+        }
+    }
+}

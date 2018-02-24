@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+    h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+        color: inherit;
+    }
+}
+
+.download_btn > a {
+    padding: 0.6em 2.2em;
+    @include media-breakpoint-up(md){
+        padding: 0.6em 3.2em;
+    }
+    font-size: 20px;
+    line-height: 1.7em;
+    background: transparent;
+    position: relative;
+    border: 2px solid;
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-style: italic;
+    border-radius: 2px;
+}

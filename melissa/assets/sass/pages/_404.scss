@@ -1,0 +1,48 @@
+.not-found {
+	text-align: center;
+	max-width: 390px;
+	margin: 0 auto 0 0;
+	padding: 10% 0 10%;
+	@include card;
+
+	.search-no-results & {
+		max-width: 100%;
+		position: relative;
+		top: auto;
+		transform: translate(0);
+		.search-form {
+			margin: 0 auto 30px auto;
+		}
+		.page-title {
+			@include font-size(3);
+			@include media-breakpoint-up(lg) {
+				@include font-size(6);
+			}
+		}
+	}
+
+	.page-title {
+		margin: 28px 0;
+		@include font-size(5);
+		@include media-breakpoint-up(sm) {
+			@include font-size(13.125);
+		}
+	}
+
+	h4 {
+		margin: 0 0 40px;
+		@include font-size(1.5625);
+	}
+
+	.btn {
+		@include font-size(1.25);
+		padding: 19px 23px;
+	}
+
+	p {
+		margin: 0 0 2.7em;
+		& + p {
+			margin: 0 0 2.4em;
+		}
+	}
+}

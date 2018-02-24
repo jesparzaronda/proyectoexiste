@@ -1,0 +1,103 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+    max-width: 570px;
+    margin: 1em auto 4em;
+    overflow: hidden;
+    .nav-previous {
+        float: left;
+        width: 50%;
+        > a {
+            display: inline-block;
+            vertical-align: top;
+            text-decoration: none;
+            white-space: nowrap;
+            @include font-size(1.25);
+            font-style: italic;
+            &:before {
+                @include font-size(1.25);
+                content: '\E408';
+                vertical-align: middle;
+                margin-right: 27px;
+                @include material-icon();
+            }
+        }
+    }
+    .nav-next {
+        float: right;
+        width: 50%;
+        text-align: right;
+        white-space: nowrap;
+        > a {
+            display: inline-block;
+            vertical-align: top;
+            text-decoration: none;
+            @include font-size(1.25);
+            font-style: italic;
+            &:after {
+                @include font-size(1.25);
+                content: '\E409';
+                vertical-align: middle;
+                @include material-icon();
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin: 5em auto 5.7em;
+    max-width: 570px;
+    text-align: center;
+}
+
+.page-numbers {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    text-align: center;
+    text-decoration: none;
+    @include font-size(1.25);
+    font-style: italic;
+
+    @include border-radius;
+    &.dots {
+        min-width: 2em;
+        border: none;
+        background-color: transparent;
+    }
+    &.next {
+        float: right;
+    }
+    &.prev {
+        float: left;
+    }
+    &.next,
+    &.prev {
+        margin: 0;
+        border: none;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1em;
+    &__title {
+        margin-right: 5px;
+    }
+    a,
+    > .page-links__item {
+        line-height: 3;
+        display: inline-block;
+        min-width: 3em;
+        height: 3em;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        border: 1px solid $color__background-hr;
+    }
+    a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,13 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_taxonomy .tm_pb_taxonomy__content h6 a:hover{
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_taxonomy .post-count{
+	color: $regular_accent_color_2;
+}
+
+.tm_pb_taxonomy__content .btn:hover{
+	border-color:  $regular_accent_color_2;
+	background:  $regular_accent_color_2;
+	color: $invert_text_color;
+}

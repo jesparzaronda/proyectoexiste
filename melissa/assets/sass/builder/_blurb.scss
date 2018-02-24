@@ -1,0 +1,95 @@
+#tm_builder_outer_content {
+    .tm_pb_blurb_position_left {
+        .tm_pb_main_blurb_image img {
+            padding-top: 8px;
+            width: auto;
+            max-width: 120px;
+        }
+    }
+}
+
+#tm_builder_outer_content {
+    .tm_pb_blurb.tm_pb_module {
+        padding: 0;
+        @include media-breakpoint-up(sm) {
+            padding: 0 10px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-top: 30px;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            padding: 0 10px;
+        }
+
+        .tm_pb_blurb_content {
+            max-width: 100%;
+            address {
+                font-style: normal;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                margin: 29px 0 12px;
+                padding: 0;
+                @include font-size(1.375);
+            }
+        }
+
+        .tm_pb_main_blurb_image {
+            max-width: 200px;
+            margin: 0 auto; 
+            margin-bottom: 26px;
+            width: auto;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                    @include media-breakpoint-up(md) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            margin: 0 0 5px;
+            em {
+                font-size: inherit;
+            }
+        }
+
+        p, h6 {
+            margin-bottom: 0;
+        }
+
+        em {
+            @include font-size(1);
+        }
+
+        &.tm_pb_blurb_position_left {
+            padding: 0;
+            @include media-breakpoint-up(md) {
+                padding: 0 45px;
+            }
+
+            h4 {
+                margin-top: 10px;
+                @include media-breakpoint-up(sm) {
+                    margin-top: 0;
+                }
+            }
+
+            .tm_pb_blurb_container {
+                padding-left: 0;
+                display: block;
+                vertical-align: middle;
+                @include media-breakpoint-up(sm) {
+                    padding-left: 35px;
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}

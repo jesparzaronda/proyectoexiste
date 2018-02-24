@@ -1,0 +1,25 @@
+.site-header.default {
+	.main-navigation {
+		.menu > li > a {
+			margin: 0 2.2em 0 0;
+			padding: 0;
+			text-align: left;
+			@media (max-width: 767px) {
+		        text-align: center;
+		    }
+		}
+		.menu > li > a > .menu-item__desc {
+			width: 200%;
+			@media (max-width: 767px) {
+        		width: 100%;
+      		}
+		}
+	}
+	.site-branding {
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			text-align: left;
+			padding-bottom: 20px;
+		}
+	}
+}

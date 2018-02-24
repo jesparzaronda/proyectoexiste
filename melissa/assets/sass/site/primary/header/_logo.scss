@@ -1,0 +1,10 @@
+.site-logo {
+	margin: 0;
+	line-height: 63px;
+	&__link {
+		text-decoration: none;
+		&:focus {
+			outline: none;
+		}
+	}
+}

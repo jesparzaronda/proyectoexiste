@@ -1,0 +1,11 @@
+.subscribe-block__input { color: $regular_text_color; }
+
+.subscribe-block__submit:hover {
+    background: $regular_accent_color_2;
+    border-color: $regular_accent_color_2;
+    color: $invert_link_color;
+}
+
+.follow-block .social-list--widget .menu-item a:hover::before {
+    color: $regular_accent_color_2;
+}

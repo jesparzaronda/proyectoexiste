@@ -1,0 +1,115 @@
+.search-form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 370px;
+    height: 60px;
+
+    label {
+        display: inline-block;
+        width: 100%;
+    }
+    .top-panel & {
+        display: inline-block;
+        vertical-align: top;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+    &:after {
+        display: block;
+        clear: both;
+        width: 100%;
+        content: '';
+    }
+    &__field[type='search'] {
+        box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        width: 100%;
+        height: 60px;
+        @include font-size(1);
+        font-style: italic;
+        border: none;
+        border: $border__radius;
+        padding: 14px 60px 14px 20px;
+        margin: 0 auto;
+        .top-panel & {
+            padding: 13px 13px 13px 23px;
+            border: none;
+            background: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__field[type='search'] {
+            border-top: 2px solid #fff;
+        }
+    }
+    &__submit {
+        padding: 0;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        background: transparent;
+        @include translate(0, -50%);
+        &::before {
+            content: "\f002";
+            font-family: FontAwesome;
+            @include font-size(1.5);
+            @include transition(.3s ease all);
+        }
+        .top-panel & {
+            width: 30px;
+            padding: 5px 0;
+            background-color: transparent;
+            &:hover {
+                background: none;
+            }
+            &:active,
+            &:focus,
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+input::-webkit-input-placeholder {
+    opacity: .5;
+}
+
+input::-moz-placeholder {
+    opacity: .5;
+}
+
+/* Firefox 19+ */
+input:-moz-placeholder {
+    opacity: .5;
+}
+
+/* Firefox 18- */
+input:-ms-input-placeholder {
+    opacity: .5;
+}
+
+textarea::-webkit-input-placeholder {
+    opacity: .5;
+}
+
+textarea::-moz-placeholder {
+    opacity: .5;
+}
+
+/* Firefox 19+ */
+textarea:-moz-placeholder {
+    opacity: .5;
+}
+
+/* Firefox 18- */
+textarea:-ms-input-placeholder {
+    opacity: .5;
+}

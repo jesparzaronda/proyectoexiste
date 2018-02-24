@@ -1,0 +1,8 @@
+#tm_builder_outer_content .tm_pb_cta.tm_pb_module .tm_pb_promo_button {
+	background: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_cta.tm_pb_module .tm_pb_promo_button:hover {
+	background: $regular_accent_color_1;
+	color: $regular_link_color;
+}

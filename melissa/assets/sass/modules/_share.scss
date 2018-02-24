@@ -1,0 +1,46 @@
+.share-btns {
+    &__list {
+        .posts-list &, .single-post & {
+            flex: 1 1 auto;
+            order: 2;
+            text-align: left;
+            align-self: flex-end;
+            padding-top: 20px;
+            @include media-breakpoint-up(sm) {
+                text-align: right;
+                padding-top: 0;
+            }
+        }
+
+        .hentry & {
+            float: left;
+        }
+        .single-post & {
+            order: 3;
+            padding-top: 5px;
+            margin-bottom: 10px;
+            @include media-breakpoint-up(sm) {
+                padding-top: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        & + * {
+            margin-left: 27px;
+        }
+    }
+    &__link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        @include font-size(0.75);
+
+        > i {
+            color: #c4c4c4;
+            @include transition(.3s ease all);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+.site-info a:hover {
+	color: $regular_text_color;
+}
+
+.footer-copyright{
+	color: $regular_link_color;
+}
+
+.footer-copyright a{
+	color: $regular_link_color;
+}
+
+.footer-copyright a:hover{
+	color: $regular_link_hover_color;
+}
+
+footer .social-list .menu-item > a {
+	color:  $regular_link_color;
+}
+
+footer .social-list .menu-item > a:hover,
+footer .social-list a:hover::before {
+	color:  $regular_accent_color_4;
+}

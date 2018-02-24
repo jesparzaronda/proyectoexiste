@@ -1,0 +1,51 @@
+#tm_builder_outer_content .tm_pb_post_slider.tm_pb_bg_layout_light .post-meta a:hover{
+	color: $regular_accent_color_2 !important;
+}
+
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .entry-meta time{
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .entry-meta time:hover{
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .entry-footer .btn:hover,
+#tm_builder_outer_content .tm_pb_module.tm_pb_blog .more-link:hover,
+#tm_builder_outer_content .tm_pb_module.tm_pb_posts .btn:hover{
+	border-color:  $regular_accent_color_2;
+	background:  $regular_accent_color_2;
+	color: $invert_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blog .entry-title a:hover,
+.swiper-slide .entry-content h6 a:hover,
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .post__cats a:hover,
+#tm_builder_outer_content .tm_pb_module .tm-posts_item_title a:hover{
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .swiper-button-next, 
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .swiper-button-prev{
+	color: $regular_link_color;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+	background: $regular_link_color;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet:hover,
+.swiper-pagination-clickable .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background:   $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .swiper-button-next:hover,
+#tm_builder_outer_content .tm_pb_swiper.tm_pb_module .swiper-button-prev:hover{
+	color:   $regular_accent_color_2;
+}
+
+
+#tm_builder_outer_content .tm_pb_module .tm_audio_content,
+#tm_builder_outer_content .tm_pb_module .tm_quote_content,
+#tm_builder_outer_content .tm_pb_module .tm_link_content {
+	background:  $regular_accent_color_2;
+}

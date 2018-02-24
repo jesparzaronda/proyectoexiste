@@ -1,0 +1,33 @@
+/* #Elements */
+
+
+code {
+	color: @darken( $regular_text_color, 15% );
+	background: $invert_text_color;
+}
+
+ul li, ol li{
+	color: $regular_link_color;
+}
+
+.entry-content ul li::before {
+	color: $regular_accent_color_2;
+}
+
+blockquote::before {
+	color: $regular_accent_color_1;
+}
+
+blockquote cite {
+	color: $regular_accent_color_3;
+}
+
+.breadcrumbs__item-target,.breadcrumbs__item-sep{
+	color: $regular_accent_color_3;
+}
+
+.download_btn > a:hover {
+	background: $regular_accent_color_2;
+	color: $invert_link_color;
+	border-color:$regular_accent_color_2;
+}

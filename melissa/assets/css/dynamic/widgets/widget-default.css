@@ -1,0 +1,99 @@
+/* #Widgets (defaults) */
+.widget li {
+	color: $regular_link_color;
+}
+.invert .widget li {
+	color: $invert_link_color;
+}
+.invert .widget select {
+	color: $regular_text_color;
+}
+
+.widget select {
+	color: $regular_accent_color_1;
+}
+/* #Widget Calendar */
+.widget_calendar caption {
+	color: $regular_text_color;
+}
+
+.widget_calendar th {
+	color: $regular_text_color;
+}
+
+.widget_calendar tbody td > a:hover {
+	background: $regular_accent_color_2;
+	color: $invert_link_color;
+}
+
+.widget_calendar #next > a,
+.widget_calendar #prev > a{
+	color:  $regular_link_color;
+}
+
+
+.widget_calendar #next > a:hover,
+.widget_calendar #prev > a:hover{
+	color:  $regular_link_hover_color;
+}
+
+
+.widget_calendar thead th{
+	color: $regular_link_color;
+}
+/* #Widget Tag Cloud */
+.invert .tagcloud a:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_2;
+}
+
+/* #Widget Recent Posts */
+.widget_recent_entries .post-date {
+	color: $regular_text_color;
+}
+.invert .widget_recent_entries .post-date {
+	color: @darken( $invert_text_color, 10% );
+}
+
+.custom-posts h6 a:hover {
+	color: $regular_accent_color_2;
+}
+
+.custom-posts .post__comments a{
+	color: $regular_accent_color_2;
+}
+
+.custom-posts .post__comments a:hover{
+	color: $regular_link_color;
+}
+
+.widget_archive li::before, .widget_categories li::before, .widget_pages li::before, .widget_meta li::before, .widget_rss li::before, .widget_nav_menu li::before {
+	color:  $regular_accent_color_2;
+}
+
+.widget_recent_comments li span{
+	color:  $regular_accent_color_2;
+}
+
+.widget_recent_comments li{
+	font-family:$h2_font_family;
+}
+.widget .widget-title::before {
+	background: $regular_accent_color_1;
+}
+
+.tagcloud a {
+	border-color:$regular_accent_color_1;
+	color: $regular_accent_color_3;
+}
+.tagcloud a:hover {
+	border-color: $regular_accent_color_2;
+	background: $regular_accent_color_2;
+	color: $invert_link_color;
+}
+.rsswidget {
+	color: $regular_accent_color_2;
+}
+.rsswidget:hover {
+	color: $regular_accent_color_3;
+}

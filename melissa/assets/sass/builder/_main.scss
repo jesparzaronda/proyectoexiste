@@ -1,0 +1,50 @@
+.tm_pb_section {
+    margin: 0;
+    @include media-breakpoint-up(xl) {
+        margin: 0 -200px;
+    }
+
+    .tm_pb_column .tm_pb_module p > img.aligncenter {
+        #tm_builder_outer_content & {
+            margin: 0 auto 35px auto;
+        }
+    }
+}
+
+.tm_pb_button {
+    @extend .btn;
+}
+
+#tm_builder_outer_content .tm_pb_image.tm_pb_module {
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+        text-align: left;
+    }
+}
+
+#tm_builder_outer_content .tm_pb_map_container.tm_pb_module {
+    h3 {
+        margin: 15px 0;
+    }
+}
+
+.overlay {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(#fff, .5);
+        z-index: 0;
+        display: block;
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+    }
+}
+.tm_pb_text h1 {
+    font-size: 58px;
+} 

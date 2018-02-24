@@ -1,0 +1,62 @@
+ .tm-pg_frontend .tm-pg_front_gallery .tm_pg_gallery-item_link::before{
+    background: $regular_accent_color_2;
+}
+
+.tm-pg_front_gallery-grid .tm_pg_gallery-item_label, 
+.tm-pg_front_gallery-masonry .tm_pg_gallery-item_label, 
+.tm-pg_front_gallery-justify .tm_pg_gallery-item_label{
+    background: $regular_link_color;
+    font-family:@font_family( $body_font_family );
+}
+
+.tm-pg_front_gallery-grid .tm_pg_gallery-item_title,
+.tm-pg_front_gallery-masonry .tm_pg_gallery-item_title,
+.tm-pg_front_gallery-justify .tm_pg_gallery-item_title{
+    color:$invert_text_color;
+}
+
+.tm-pg_front_gallery-grid .tm_pg_gallery-item_counter,
+.tm-pg_front_gallery-masonry .tm_pg_gallery-item_counter,
+.tm-pg_front_gallery-justify .tm_pg_gallery-item_counter{
+    color:$invert_text_color;
+    font-family:@font_family( $body_font_family );
+}
+
+.tm-pg_front_gallery-grid .tm_pg_gallery-item_description,
+.tm-pg_front_gallery-masonry .tm_pg_gallery-item_description,
+.tm-pg_front_gallery-justify .tm_pg_gallery-item_description{
+    font-family:@font_family( $body_font_family );
+}
+
+ .tm-pg_front_gallery-grid .tm_pg_gallery-item_show-more a{
+     background: $regular_link_color;
+ }
+
+ .tm-pg_front_gallery-grid .tm_pg_gallery-item_show-more a:hover{
+     background: $regular_accent_color_2;
+ }
+
+ .tm-pg_frontend .tm-pg_front_gallery-navigation .tm_pg_nav-links .tm_pg_page-numbers{
+     font-family:@font_family( $body_font_family );
+     color: $regular_link_color;
+ }
+
+
+ .tm-pg_frontend .tm-pg_front_gallery-navigation .tm_pg_nav-links .tm_pg_page-numbers:not(.current):hover,
+ .tm-pg_frontend .tm-pg_front_gallery-navigation .tm_pg_nav-links .tm_pg_page-numbers.current{
+       color: $regular_accent_color_2;
+ }
+
+ .tm-pg_frontend .tm-pg_front_gallery-navigation .tm_pg_nav-links .tm_pg_page-numbers i{
+     color: $regular_link_color;
+ }
+
+ .tm-pg_frontend .tm-pg_front_gallery .load-more-button .btn{
+     font-family:@font_family( $body_font_family );
+ }
+
+ .tm-pg_frontend .tm-pg_front_gallery .load-more-button .btn:hover{
+     border-color: $regular_accent_color_2;
+     background:  $regular_accent_color_2;
+     color: $invert_text_color;
+ }
